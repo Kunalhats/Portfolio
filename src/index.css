@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define custom classes */
+@layer utilities {
+  .text-content {
+    @apply text-gray-900 dark:text-gray-100;
+  }
+
+  .section {
+    @apply pt-12 xl:pt-16 2xl:pt-20; /* Adjusted padding */
+  }
+
+  .max-width {
+    @apply mx-auto px-5 lg:px-24 xl:px-48;
+  }
+
+  .bg-gradient {
+    @apply bg-gradient-to-r from-purple-500 via-pink-500 to-red-500;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-red-400;
+  }
+
+  .btn-primary {
+    @apply inline-block px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold rounded-lg shadow-md transition duration-300 ease-in-out hover:from-pink-600 hover:to-purple-600;
+  }
+
+  .profile-pic {
+    @apply w-64 md:w-80 lg:w-96 rounded-full shadow-lg border-4 border-white;
+  }
+
+  .animate-slide-in-right {
+    @apply transform translate-x-full opacity-0 transition-all ease-in-out;
+    transition-duration: 3s;
+  }
+
+  .animate-slide-in-right-visible {
+    @apply translate-x-0 opacity-100;
+  }
+}
+
+body {
+  background-image: url('./assets/BG.jpeg'); /* Adjust the path as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.side-navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-image: url('./assets/BG.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: linear-gradient(to right, rgba(128, 0, 128, 1), rgba(255, 0, 128, 1));
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000; /* Ensure sidebar is on top */
+}
+
+.side-navbar.open {
+  transform: translateX(0);
+}
+
+.side-navbar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.side-navbar__nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.side-navbar__nav a {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.side-navbar__nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.side-navbar__social {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.side-navbar__social a {
+  margin: 0 0.5rem;
+  color: white;
+}
+
+.side-navbar__social a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Add to your CSS file */
+.tagline {
+  display: inline-block;
+  border-right: 2px solid currentColor;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from {
+    border-right-color: transparent;
+  }
+  to {
+    border-right-color: currentColor;
+  }
+}
+
+/* Responsive design for nav links */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .leading-relaxed{
+    margin-top: 5rem;
+  }
+
+  .header-nav a {
+    font-size: 1rem; /* Adjust font size for mid-sized screens */
+  }
+}
+
+/* Ensure nav links display above mobile view and adjust header layout */
+@media (min-width: 1025px) {
+  .side-navbar {
+    display: none; /* Hide side navbar on larger screens */
+  }
+
+  .header-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-right: auto;
+  }
+  
+
+  
+}
+
+@media (max-width: 767px) {
+  .header-nav {
+    display: none; /* Hide nav links on small screens */
+  }
+
+}
+
