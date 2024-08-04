@@ -43,12 +43,12 @@ function Home() {
   return (
     <main className="relative bg-cover bg-center bg-no-repeat w-full h-screen flex items-center justify-center p-4 sm:p-8">
       <div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 opacity-75"></div>
-      <div className="relative done z-10 w-full max-w-6xl flex flex-col lg:flex-row justify-between items-center text-fuchsia-950 mt-16 lg:mt-0">
+      <div className="relative done z-10 w-full max-w-6xl flex flex-col lg:flex-row justify-between items-center text-white mt-16 lg:mt-0">
         <div className="w-full lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0 px-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-relaxed">
             Hi, <span role="img" aria-label="waving hand">👋</span><br />
             My Name is <br />
-            <span className="text-purple-950">{name}</span>
+            <span className="text-white">{name}</span>
           </h1>
           <h2 className="text-xl sm:text-3xl font-medium mb-6">
             <span className="tagline">{currentTagline}</span>

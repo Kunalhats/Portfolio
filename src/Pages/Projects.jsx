@@ -8,7 +8,7 @@ function Projects() {
       style={{ backgroundImage: "url('/path/to/your/background.jpg')" }}>
 
       <div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 opacity-75"></div>
-      <div className="relative z-10 w-full max-w-6xl text-gray-900 text-purple-950">
+      <div className="relative z-10 w-full max-w-6xl text-gray-900 text-white">
         <section className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Projects</h1>
           <p className="text-lg sm:text-xl mb-8">

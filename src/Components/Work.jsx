@@ -15,13 +15,13 @@ function Work({
       <div className="flex justify-between items-center mb-2">
         {position ? (
           <>
-            <h1 className="text-purple-950 text-xl lg:text-2xl font-semibold">{position}</h1>
+            <h1 className="text-white text-xl lg:text-2xl font-semibold">{position}</h1>
             <div className="btn bg-green-500 text-white text-xs lg:text-sm inline-block rounded-full px-4 py-1">
               {type}
             </div>
           </>
         ) : (
-          <h1 className="text-purple-950 text-xl lg:text-2xl font-semibold">{stream}</h1>
+          <h1 className="text-white text-xl lg:text-2xl font-semibold">{stream}</h1>
         )}
       </div>
       <div className="flex justify-between">
@@ -37,7 +37,7 @@ function Work({
             >
               <path d="M3.33331 1.5V10.5H7.33331V8.75H8.66665V10.5H12.6666V1.5H3.33331ZM4.66665 2.5H5.99998V3.5H4.66665V2.5ZM7.33331 2.5H8.66665V3.5H7.33331V2.5ZM9.99998 2.5H11.3333V3.5H9.99998V2.5ZM4.66665 4.5H5.99998V5.5H4.66665V4.5ZM7.33331 4.5H8.66665V5.5H7.33331V4.5ZM9.99998 4.5H11.3333V5.5H9.99998V4.5ZM4.66665 6.5H5.99998V7.5H4.66665V6.5ZM7.33331 6.5H8.66665V7.5H7.33331V6.5ZM9.99998 6.5H11.3333V7.5H9.99998V6.5ZM4.66665 8.5H5.99998V9.5H4.66665V8.5ZM9.99998 8.5H11.3333V9.5H9.99998V8.5Z" />
             </svg>
-            <p className="text-purple-950 text-sm md:text-base font-light pl-1">
+            <p className="text-white text-sm md:text-base font-light pl-1">
               {position ? company : institute}
             </p>
           </div>
@@ -58,7 +58,7 @@ function Work({
             </p>
           </div>
         </div>
-        <p className="text-purple-950 text-sm md:text-base font-light pl-1 min-w-fit">{duration}</p>
+        <p className="text-white text-sm md:text-base font-light pl-1 min-w-fit">{duration}</p>
       </div>
     </article>
   );
