@@ -45,10 +45,10 @@ function Technologies() {
       style={{ backgroundImage: "url('/path/to/your/background.jpg')" }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 opacity-75"></div>
-      <div className="relative z-10 w-full max-w-6xl text-white">
+      <div className="relative z-10 w-full max-w-6xl text-neutral-200">
         <section className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-purple-950 ">Tech Stack</h1>
-          <p className="text-lg sm:text-xl mb-8 sm:mb-12 text-purple-950 ">Technologies I've been working with recently</p>
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight text-neutral-200 ">Tech Stack</h1>
+          <p className="text-lg sm:text-xl mb-8 sm:mb-12 text-black ">Technologies I've been working with recently</p>
         </section>
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12 opacity-75">
           {techStack.map((tech, index) => (

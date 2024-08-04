@@ -8,14 +8,14 @@ function Projects() {
       style={{ backgroundImage: "url('/path/to/your/background.jpg')" }}>
 
       <div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 opacity-75"></div>
-      <div className="relative z-10 w-full max-w-6xl text-gray-900 text-white">
+      <div className="relative z-10 w-full max-w-6xl text-gray-900 text-neutral-200">
         <section className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Projects</h1>
-          <p className="text-lg sm:text-xl mb-8">
+          <p className="text-lg sm:text-xl mb-8 text-black">
             Discover a selection of my recent projects, demonstrating my skills and technologies used.
           </p>
         </section>
-        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 opacity-75">
+        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 opacity-75 text-lime-950 ">
           {projectDetails.map(
             ({ title, image, description, techstack, previewLink, githubLink }) => (
               <div
