@@ -4,14 +4,14 @@ import { personalDetails, workDetails, eduDetails } from "../Details";
 
 function About() {
   return (
-    <main className="relative bg-cover bg-center bg-no-repeat w-full h-full flex items-center justify-center p-4 sm:p-8">
+    <main className="relative bg-cover bg-center bg-no-repeat w-full min-h-screen flex flex-col items-center pt-16 p-4 sm:p-8">
       <div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 opacity-75"></div>
       <div className="relative z-10 w-full max-w-6xl text-neutral-200">
         <section className="mb-8">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-relaxed ">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 leading-relaxed">
             About Me
           </h1>
-          <p className="text-lg sm:text-xl mb-8 sm:mb-20 text-black ">
+          <p className="text-lg sm:text-xl mb-8 sm:mb-20 text-black">
             {personalDetails.about}
           </p>
         </section>
