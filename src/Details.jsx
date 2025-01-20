@@ -69,7 +69,7 @@ export const workDetails = [
     Company: `CodersVoice`,
     Location: "Kolkata",
     Type: "Full Time",
-    Duration: "Oct 2023 - Apr 2024",
+    Duration: "Jan 2024 - Jan 2025",
   },
   {
     Position: "Web Developer Intern",
