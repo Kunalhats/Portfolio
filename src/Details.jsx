@@ -69,7 +69,7 @@ export const workDetails = [
     Company: `CodersVoice`,
     Location: "Kolkata",
     Type: "Full Time",
-    Duration: "Jan 2024 - Jan 2025",
+    Duration: "Oct 2024 - Apr 2026",
   },
   {
     Position: "Web Developer Intern",
@@ -85,8 +85,8 @@ export const eduDetails = [
   {
     Course: "Bachelor of Technology",
     Stream: "Computer Science and Engineering",
-    Institute: "Roorkee College of Engineering",
-    Location: "Roorkee, Uttarakhand",
+    Institute: "Uttarakhand Technical University",
+    Location: "Dehradun, Uttarakhand",
     Type: "Full Time",
     Duration: "Aug 2019 - Jun 2023",
   },
